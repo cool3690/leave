@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+ <Button
+        android:id="@+id/okbtndel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="取消請假" />
+
+    <ListView
+        android:id="@+id/preferdel"
+        android:layout_width="fill_parent"
+        android:layout_height="500px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/okbtndel" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fin"
+        android:layout_alignLeft="@+id/lstPrefer"
+        android:layout_marginLeft="22dp"
+        android:text="show" />
+
+    <Button
+        android:id="@+id/fin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="返回" />
+
+    <EditText
+        android:id="@+id/rea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/show"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:hint="取消理由"
+        android:ems="10" />
+
+</RelativeLayout>
